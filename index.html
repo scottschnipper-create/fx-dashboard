@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FX Markets Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>FX Markets Dashboard</h1>
+      <p class="subtitle" id="last-updated">Loading...</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Live FX Rates -->
+    <section class="section">
+      <h2>Live FX Rates</h2>
+      <div class="rates-grid" id="rates-grid">
+        <div class="rate-card skeleton"></div>
+        <div class="rate-card skeleton"></div>
+        <div class="rate-card skeleton"></div>
+        <div class="rate-card skeleton"></div>
+        <div class="rate-card skeleton"></div>
+        <div class="rate-card skeleton"></div>
+      </div>
+    </section>
+
+    <!-- Market Facts -->
+    <section class="section">
+      <h2>FX Market Facts</h2>
+      <div class="facts-grid" id="facts-grid">
+        <div class="fact-card">
+          <div class="fact-number">$7.5T</div>
+          <div class="fact-label">Daily Trading Volume</div>
+          <p>The FX market is the largest financial market in the world with over $7.5 trillion traded daily (BIS 2022).</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">24/5</div>
+          <div class="fact-label">Trading Hours</div>
+          <p>FX markets operate 24 hours a day, 5 days a week, across major sessions: Sydney, Tokyo, London, and New York.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">88%</div>
+          <div class="fact-label">USD Involvement</div>
+          <p>The US Dollar is on one side of approximately 88% of all FX transactions globally.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">EUR/USD</div>
+          <div class="fact-label">Most Traded Pair</div>
+          <p>EUR/USD accounts for roughly 23% of all daily FX turnover, making it the most liquid currency pair.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">180+</div>
+          <div class="fact-label">Currencies Worldwide</div>
+          <p>There are over 180 currencies recognized by the UN, but only about 18 are commonly traded in the FX market.</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-number">London</div>
+          <div class="fact-label">Largest FX Hub</div>
+          <p>London handles ~38% of all global FX trading volume, making it the world's largest foreign exchange center.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FX Headlines -->
+    <section class="section">
+      <h2>Top FX Headlines</h2>
+      <div class="headlines-list" id="headlines-list">
+        <div class="headline-card skeleton"></div>
+        <div class="headline-card skeleton"></div>
+        <div class="headline-card skeleton"></div>
+        <div class="headline-card skeleton"></div>
+        <div class="headline-card skeleton"></div>
+      </div>
+    </section>
+
+    <!-- Session Status -->
+    <section class="section">
+      <h2>Trading Sessions</h2>
+      <div class="sessions-grid" id="sessions-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>FX Markets Dashboard &mdash; Data refreshes automatically. Rates from frankfurter.dev.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
